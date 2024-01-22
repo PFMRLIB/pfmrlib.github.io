@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="Project Platinum-Neo - 现代化SDR业余电台注：由于项目仍在开发中，故下文参数可能与最终参数不同。与此项目有关的文章见Tags:Platinum-Neo
+特性
+支持多种模拟调制方式(AM, FM, SSB, CW)
+支持多种数字调制方式(RTTY, FT-8)
+可自行修改调制器"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Hiryuu Concordea"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Introduction to Project Platinum-Neo | Platinum-Neo项目简介"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Project Platinum-Neo - 现代化SDR业余电台注：由于项目仍在开发中，故下文参数可能与最终参数不同。与此项目有关的文章见Tags:Platinum-Neo
+特性
+支持多种模拟调制方式(AM, FM, SSB, CW)
+支持多种数字调制方式(RTTY, FT-8)
+可自行修改调制器"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Hiryuu Concordea&#39;s Blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://pfmrlib.github.ioimg/home-bg.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="http://pfmrlib.github.ioimg/home-bg.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>Introduction to Project Platinum-Neo | Platinum-Neo项目简介 - Hiryuu Concordea&#39;s Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Hiryuu Concordea's Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/projects">
+                            
+                                Projects
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/pfmrlib/pfmrlib.github.io">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    
+
+
+    <section class="main">
+        <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Introduction to Project Platinum-Neo | Platinum-Neo项目简介</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2024-01-20
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="Project-Platinum-Neo-现代化SDR业余电台"><a href="#Project-Platinum-Neo-现代化SDR业余电台" class="headerlink" title="Project Platinum-Neo - 现代化SDR业余电台"></a>Project Platinum-Neo - 现代化SDR业余电台</h1><p><em>注：由于项目仍在开发中，故下文参数可能与最终参数不同。</em><br><em>与此项目有关的文章见<a href="/tags/platinum-neo">Tags:Platinum-Neo</a></em></p>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul>
+<li>支持多种模拟调制方式(AM, FM, SSB, CW)</li>
+<li>支持多种数字调制方式(RTTY, FT-8)</li>
+<li>可自行修改调制器的各项配置参数</li>
+<li>支持70MHz~6GHz内的所有业余频段</li>
+<li>电台存储记忆功能</li>
+</ul>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Project Platinum-Neo是一款全功能数字电台，源于此前的Project Platinum项目。此项目基于ADI的AD936x收发器实现，支持70MHz~6GHz范围内所有业余波段的操作，并且具有AGC、可调基带滤波器等必要功能。此设备支持多种模拟与数字调制方式，如AM、FM、SSB、RTTY等，并且调制的各项参数均可由用户调节。此外，此设备还具有自动呼叫、预制电文发射、CTCSS等多种辅助功能。  </p>
+<p><em>注:此项目的名称Platinum源于明日方舟干员<strong>白金</strong>。</em></p>
+<h2 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h2><h3 id="1-硬件架构"><a href="#1-硬件架构" class="headerlink" title="1. 硬件架构"></a>1. 硬件架构</h3><p>Platinum-Neo的硬件架构如下所示：<br><img src="/projects/platinum-neo/assets/hardware_arch.jpg" alt=" "><br>Platinum-Neo主要由以下五部分构成：</p>
+<ol>
+<li>射频收发模块。<br>该部分包括AD936x宽带收发器以及用于射频收发的AFE。接收AFE由LNA、滤波器、VGA三部分组成，发射AFE由VGA、滤波器组、PA三部分组成。AFE通过自定义控制接口(包含一个SPI接口、一对模拟输入输出接口以及三个GPIO接口)连接到MCU与AD936x芯片的辅助AD&#x2F;DA上。<br>AD936x与FPGA间通过并行CMOS端口传输基带数据。MCU通过SPI与其他控制用GPIO端口控制AD936x的工作。</li>
+<li>FPGA。<br>该部分基于20k级FPGA(XC7A25&#x2F;35T, EP4CE22, Gowin GW2AR-18等)实现基带信号处理、语音处理、数据处理等功能。目前版本此部分采用了Sipeed的Tang Primer 20k板卡(GW2A-LV18)。FPGA通过I2S接口与音频CODEC间传输音频数据，通过FSMC接口与FPGA互传数据。</li>
+<li>MCU<br>该部分基于STM32F407 MCU，控制整个系统的工作并通过USB FS接口与计算机通信。</li>
+<li>音频CODEC<br>音频CODEC将来自麦克风等输入设备的音频信号转化为输入数据流，或将输出数据流转化为音频信号从而驱动扬声器等输出设备。MCU通过I2C控制音频CODEC。</li>
+<li>时钟源。<br>系统采用了26MHz的TCXO(±0.5ppm)作为初始时钟源，并通过SI5351时钟发生器产生供给宽带收发器、FPGA与音频CODEC的时钟。MCU通过I2C控制时钟发生器。</li>
+</ol>
+<h3 id="2-FPGA-Fabric"><a href="#2-FPGA-Fabric" class="headerlink" title="2. FPGA Fabric"></a>2. FPGA Fabric</h3><p><em>待补充</em></p>
+<h2 id="性能参数"><a href="#性能参数" class="headerlink" title="性能参数"></a>性能参数</h2><h3 id="1-射频性能参数"><a href="#1-射频性能参数" class="headerlink" title="1.射频性能参数"></a>1.射频性能参数</h3><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>条件</th>
+<th>最小</th>
+<th>典型 &nbsp;</th>
+<th>最大</th>
+<th>单位</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>接收波段</td>
+<td>-</td>
+<td>70</td>
+<td>-</td>
+<td>6000</td>
+<td>MHz</td>
+</tr>
+<tr>
+<td>发射波段 *1</td>
+<td>2m</td>
+<td>144.0</td>
+<td>-</td>
+<td>148.0</td>
+<td>MHz</td>
+</tr>
+<tr>
+<td></td>
+<td>70cm &nbsp;</td>
+<td>420.0 &nbsp;</td>
+<td>-</td>
+<td>450.0 &nbsp;</td>
+<td>MHz</td>
+</tr>
+<tr>
+<td></td>
+<td>23cm</td>
+<td>1240</td>
+<td>-</td>
+<td>1300</td>
+<td>MHz</td>
+</tr>
+<tr>
+<td></td>
+<td>13cm</td>
+<td>2300</td>
+<td>-</td>
+<td>2450</td>
+<td>MHz</td>
+</tr>
+<tr>
+<td></td>
+<td>9cm</td>
+<td>3300</td>
+<td>-</td>
+<td>3500</td>
+<td>MHz</td>
+</tr>
+<tr>
+<td></td>
+<td>5cm</td>
+<td>5650</td>
+<td>-</td>
+<td>5850</td>
+<td>MHz</td>
+</tr>
+<tr>
+<td>频率容限</td>
+<td>-</td>
+<td>-</td>
+<td>2</td>
+<td>-</td>
+<td>ppm</td>
+</tr>
+<tr>
+<td>最小频率步进</td>
+<td>-</td>
+<td>-</td>
+<td>1</td>
+<td>-</td>
+<td>Hz</td>
+</tr>
+<tr>
+<td>带外(杂散)发射 &nbsp;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-70</td>
+<td>dBc</td>
+</tr>
+<tr>
+<td>接收灵敏度</td>
+<td>-</td>
+<td>-100</td>
+<td>-</td>
+<td>-</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>发射功率</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>20</td>
+<td>dBm</td>
+</tr>
+<tr>
+<td>天线输入阻抗</td>
+<td>-</td>
+<td>-</td>
+<td>50</td>
+<td>-</td>
+<td>Ohm</td>
+</tr>
+</tbody></table>
+<p>注：<br>*1:ITU 3区波段。</p>
+<h3 id="2-调制解调参数"><a href="#2-调制解调参数" class="headerlink" title="2. 调制解调参数"></a>2. 调制解调参数</h3><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>条件</th>
+<th>最小 &nbsp;</th>
+<th>典型</th>
+<th>最大 &nbsp;</th>
+<th>单位</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>调制模式 &nbsp;</td>
+<td>模拟 &nbsp;</td>
+<td>-</td>
+<td>A3E(AM), J3E(SSB), F3E(FM) &nbsp;</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>数字</td>
+<td>-</td>
+<td>F1D(RTTY&#x2F;FT8), A1A(CW)</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>调制带宽</td>
+<td>FM</td>
+<td>2</td>
+<td>-</td>
+<td>75 &nbsp;</td>
+<td>kHz</td>
+</tr>
+<tr>
+<td>载波抑制</td>
+<td>SSB</td>
+<td>-50</td>
+<td>-</td>
+<td>-</td>
+<td>dB</td>
+</tr>
+</tbody></table>
+<h3 id="3-电源参数"><a href="#3-电源参数" class="headerlink" title="3. 电源参数"></a>3. 电源参数</h3><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>条件 &nbsp;</th>
+<th>最小 &nbsp;</th>
+<th>典型 &nbsp;</th>
+<th>最大 &nbsp;</th>
+<th>单位</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>输入电压 &nbsp;</td>
+<td>-</td>
+<td>6</td>
+<td>-</td>
+<td>16</td>
+<td>V</td>
+</tr>
+<tr>
+<td>功耗</td>
+<td>-</td>
+<td>12</td>
+<td>-</td>
+<td></td>
+<td>W</td>
+</tr>
+</tbody></table>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                        <li>
+                            <a href="https://twitter.com/Abs0lutHydra" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/pfmrlib" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="mailto:pfmrlib@hotmail.com" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2024 Hiryuu Concordea<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
