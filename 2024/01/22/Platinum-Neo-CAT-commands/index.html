@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="Platinum-Neo CAT CommandsNote: All of commands end with an \n.Draft 2024-1
+I. Transceiver Related (RF) Commands1. Set RX RF frequencyCommand: RXFR,&amp;lt"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Hiryuu Concordea"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Platinum-Neo CAT commands"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Platinum-Neo CAT CommandsNote: All of commands end with an \n.Draft 2024-1
+I. Transceiver Related (RF) Commands1. Set RX RF frequencyCommand: RXFR,&amp;lt"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Hiryuu Concordea&#39;s Blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://pfmrlib.github.ioimg/home-bg.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="http://pfmrlib.github.ioimg/home-bg.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>Platinum-Neo CAT commands - Hiryuu Concordea&#39;s Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Hiryuu Concordea's Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/projects">
+                            
+                                Projects
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/pfmrlib/pfmrlib.github.io">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Platinum-Neo CAT commands</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2024-01-22
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/platinum-neo/">#platinum-neo</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="Platinum-Neo-CAT-Commands"><a href="#Platinum-Neo-CAT-Commands" class="headerlink" title="Platinum-Neo CAT Commands"></a>Platinum-Neo CAT Commands</h1><p><em>Note: All of commands end with an <code>\n</code>.</em><br><em>Draft 2024-1</em></p>
+<h2 id="I-Transceiver-Related-RF-Commands"><a href="#I-Transceiver-Related-RF-Commands" class="headerlink" title="I. Transceiver Related (RF) Commands"></a>I. Transceiver Related (RF) Commands</h2><h3 id="1-Set-RX-RF-frequency"><a href="#1-Set-RX-RF-frequency" class="headerlink" title="1. Set RX RF frequency"></a>1. Set RX RF frequency</h3><p>Command: <code>RXFR,&lt;frequency&gt;</code>  </p>
+<p>Arguments:  </p>
+<ul>
+<li><code>&lt;frequency&gt;</code>: <code>uint32</code><br>RX RF frequency, in Hertz.</li>
+</ul>
+<h3 id="2-Set-RX-bandwidth"><a href="#2-Set-RX-bandwidth" class="headerlink" title="2. Set RX bandwidth"></a>2. Set RX bandwidth</h3><p>Command: <code>RXBW,&lt;bandwidth&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;bandwidth&gt;</code>: <code>uint32</code><br>RX bandwidth, in Hertz.</li>
+</ul>
+<h3 id="3-Set-RX-gain-control-mode"><a href="#3-Set-RX-gain-control-mode" class="headerlink" title="3. Set RX gain control mode"></a>3. Set RX gain control mode</h3><p>Command: <code>RXGM,&lt;mode&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;mode&gt;</code>: <code>uint8</code><br>Receiver gain control mode.<br>values:<ul>
+<li><code>0</code>: Manual control gain.</li>
+<li><code>1</code>: AGC enabled, fast attack mode.</li>
+<li><code>2</code>: AGC enabled, slow attack mode.</li>
+<li><code>3</code>: AGC enabled, hybrid attack mode.</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-Set-RX-gain-Only-available-in-manual-gain-control-mode"><a href="#4-Set-RX-gain-Only-available-in-manual-gain-control-mode" class="headerlink" title="4. Set RX gain (Only available in manual gain control mode)"></a>4. Set RX gain (Only available in manual gain control mode)</h3><p>Command: <code>RXGS,&lt;gain&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;gain&gt;</code>: <code>uint32</code><br>Receiver gain, in deciBel.</li>
+</ul>
+<h3 id="5-Set-RX-sampling-frequency"><a href="#5-Set-RX-sampling-frequency" class="headerlink" title="5. Set RX sampling frequency"></a>5. Set RX sampling frequency</h3><p>Command: <code>RXSR,&lt;samplerate&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;samplerate&gt;</code>: <code>uint32</code><br>Receiver sampling frequency, in hertz.</li>
+</ul>
+<h3 id="6-Enable-disable-RX-FIR-filter"><a href="#6-Enable-disable-RX-FIR-filter" class="headerlink" title="6. Enable&#x2F;disable RX FIR filter"></a>6. Enable&#x2F;disable RX FIR filter</h3><p>Command: <code>RXFE,&lt;enabled&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;enabled&gt;</code>: <code>bool</code><br>Set to <code>true</code>(not zero) to enable the transceiver FIR filter.</li>
+</ul>
+<h3 id="7-Set-RX-FIR-filter-coefficients"><a href="#7-Set-RX-FIR-filter-coefficients" class="headerlink" title="7. Set RX FIR filter coefficients"></a>7. Set RX FIR filter coefficients</h3><p>Command: <code>RXFC,&lt;coeff0&gt;,&lt;coeff1&gt;,...,&lt;coeff63&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;coeffN&gt;</code>: <code>int16</code><br>Coefficients of the FIR filter.</li>
+</ul>
+<h3 id="8-Set-RX-FIR-filter-decimation-ratio"><a href="#8-Set-RX-FIR-filter-decimation-ratio" class="headerlink" title="8. Set RX FIR filter decimation ratio"></a>8. Set RX FIR filter decimation ratio</h3><p>Command: <code>RXFD,&lt;decimation ratio&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;decimation ratio&gt;</code>: <code>uint8</code><br>Decimation ratio of FIR filter. Can be 1, 2 or 4.</li>
+</ul>
+<h3 id="9-Set-RX-FIR-filter-gain"><a href="#9-Set-RX-FIR-filter-gain" class="headerlink" title="9. Set RX FIR filter gain"></a>9. Set RX FIR filter gain</h3><p>Command: <code>RXFG,&lt;gain&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;gain&gt;</code>: <code>uint8</code><br>Gain of the FIR filter. Can be -12, -6, 0 or 6.</li>
+</ul>
+<h3 id="10-Set-RX-input-port"><a href="#10-Set-RX-input-port" class="headerlink" title="10. Set RX input port"></a>10. Set RX input port</h3><p>Command: <code>RXIP,&lt;port&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;port&gt;</code>: <code>char</code><br>Input RF port. Can be A, B or C.</li>
+</ul>
+<h3 id="11-Set-TX-RF-frequency"><a href="#11-Set-TX-RF-frequency" class="headerlink" title="11. Set TX RF frequency"></a>11. Set TX RF frequency</h3><p>Command: <code>TXFR,&lt;frequency&gt;</code>  </p>
+<p>Arguments:  </p>
+<ul>
+<li><code>&lt;frequency&gt;</code>: <code>uint32</code><br>TX RF frequency, in Hertz.</li>
+</ul>
+<h3 id="12-Set-TX-bandwidth"><a href="#12-Set-TX-bandwidth" class="headerlink" title="12. Set TX bandwidth"></a>12. Set TX bandwidth</h3><p>Command: <code>TXBW,&lt;bandwidth&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;bandwidth&gt;</code>: <code>uint32</code><br>TX bandwidth, in Hertz.</li>
+</ul>
+<h3 id="13-Set-TX-attenuation"><a href="#13-Set-TX-attenuation" class="headerlink" title="13. Set TX attenuation"></a>13. Set TX attenuation</h3><p>Command: <code>TXAT,&lt;attn&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;attn&gt;</code>: <code>uint32</code><br>Transmitter attenuation, in deciBel.</li>
+</ul>
+<h3 id="14-Set-TX-sampling-frequency"><a href="#14-Set-TX-sampling-frequency" class="headerlink" title="14. Set TX sampling frequency"></a>14. Set TX sampling frequency</h3><p>Command: <code>TXSR,&lt;samplerate&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;samplerate&gt;</code>: <code>uint32</code><br>Transmitter sampling frequency, in hertz.</li>
+</ul>
+<h3 id="15-Enable-disable-TX-FIR-filter"><a href="#15-Enable-disable-TX-FIR-filter" class="headerlink" title="15. Enable&#x2F;disable TX FIR filter"></a>15. Enable&#x2F;disable TX FIR filter</h3><p>Command: <code>TXFE,&lt;enabled&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;enabled&gt;</code>: <code>bool</code><br>Set to <code>true</code>(not zero) to enable the transmitter FIR filter.</li>
+</ul>
+<h3 id="16-Set-TX-FIR-filter-coefficients"><a href="#16-Set-TX-FIR-filter-coefficients" class="headerlink" title="16. Set TX FIR filter coefficients"></a>16. Set TX FIR filter coefficients</h3><p>Command: <code>TXFC,&lt;coeff0&gt;,&lt;coeff1&gt;,...,&lt;coeff63&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;coeffN&gt;</code>: <code>int16</code><br>Coefficients of the FIR filter.</li>
+</ul>
+<h3 id="17-Set-TX-FIR-filter-interpolation-ratio"><a href="#17-Set-TX-FIR-filter-interpolation-ratio" class="headerlink" title="17. Set TX FIR filter interpolation ratio"></a>17. Set TX FIR filter interpolation ratio</h3><p>Command: <code>TXFI,&lt;interpolation ratio&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;interpolation ratio&gt;</code>: <code>uint8</code><br>Interpolation ratio of FIR filter. Can be 1, 2 or 4.</li>
+</ul>
+<h3 id="18-Set-TX-FIR-filter-gain"><a href="#18-Set-TX-FIR-filter-gain" class="headerlink" title="18. Set TX FIR filter gain"></a>18. Set TX FIR filter gain</h3><p>Command: <code>TXFG,&lt;gain&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;gain&gt;</code>: <code>uint8</code><br>Gain of the FIR filter. Can be -6, 0.</li>
+</ul>
+<h3 id="19-Set-TX-output-port"><a href="#19-Set-TX-output-port" class="headerlink" title="19. Set TX output port"></a>19. Set TX output port</h3><p>Command: <code>RXIP,&lt;port&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;port&gt;</code>: <code>char</code><br>Output RF port. Can be A, B.</li>
+</ul>
+<h2 id="II-Baseband-Related-Modem-Commands"><a href="#II-Baseband-Related-Modem-Commands" class="headerlink" title="II. Baseband Related (Modem) Commands"></a>II. Baseband Related (Modem) Commands</h2><h3 id="1-Set-to-audio-modulation-mode"><a href="#1-Set-to-audio-modulation-mode" class="headerlink" title="1. Set to audio modulation mode"></a>1. Set to audio modulation mode</h3><p>Command: <code>AMOD,&lt;mode&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;mode&gt;</code>: <code>uint8</code><br>Audio modulation mode.<br>Values:<ul>
+<li><code>0</code>: AM</li>
+<li><code>1</code>: FM</li>
+<li><code>2</code>: DSB-SC</li>
+<li><code>3</code>: SSB</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-Set-audio-modulation-sideband-SSB-only"><a href="#2-Set-audio-modulation-sideband-SSB-only" class="headerlink" title="2. Set audio modulation sideband (SSB only)"></a>2. Set audio modulation sideband (SSB only)</h3><p>Command: <code>ASBD,&lt;sideband&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;sideband&gt;</code>: <code>uint8</code><br>Sideband used.<br>Values:<ul>
+<li><code>0</code>: LSB</li>
+<li><code>1</code>: USB</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-Set-AM-modulation-depth-AM-only"><a href="#3-Set-AM-modulation-depth-AM-only" class="headerlink" title="3. Set AM modulation depth (AM only)"></a>3. Set AM modulation depth (AM only)</h3><p>Command: <code>AAMD,&lt;depth&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;depth&gt;</code>: <code>uint16</code><br>Modulation depth equals to <code>&lt;depth&gt;/(2**16-1)</code>.</li>
+</ul>
+<h3 id="4-Set-FM-modulation-index-FM-only"><a href="#4-Set-FM-modulation-index-FM-only" class="headerlink" title="4. Set FM modulation index (FM only)"></a>4. Set FM modulation index (FM only)</h3><p>Command: <code>AFMI,&lt;index&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;index&gt;</code>: <code>uint16</code><br>Modulation index equals to <code>&lt;index&gt;/(2**16-1)</code>.</li>
+</ul>
+<h3 id="5-Set-TX-Volume"><a href="#5-Set-TX-Volume" class="headerlink" title="5. Set TX Volume"></a>5. Set TX Volume</h3><p>Command: <code>AVLT,&lt;volume&gt;</code></p>
+<p>Arguments:  </p>
+<ul>
+<li><code>&lt;volume&gt;</code>: <code>uint8</code><br>Volume of TX audio (0~100).</li>
+</ul>
+<h3 id="6-Set-RX-Volume"><a href="#6-Set-RX-Volume" class="headerlink" title="6. Set RX Volume"></a>6. Set RX Volume</h3><p>Command: <code>AVLR,&lt;volume&gt;</code></p>
+<p>Arguments:  </p>
+<ul>
+<li><code>&lt;volume&gt;</code>: <code>uint8</code><br>Volume of RX audio (0~100).</li>
+</ul>
+<h3 id="7-Set-audio-sample-rate"><a href="#7-Set-audio-sample-rate" class="headerlink" title="7. Set audio sample rate"></a>7. Set audio sample rate</h3><p>Command: <code>ASPR,&lt;samplerate&gt;</code></p>
+<p>Arguments:</p>
+<ul>
+<li><code>&lt;samplerate&gt;</code>: <code>uint16</code><br>Audio sample rate for both TX and RX audio in Hz. Can be 8000, 11025, 16000, 22050, 24000, 32000, 44100 and 48000.</li>
+</ul>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                        <li>
+                            <a href="https://twitter.com/Abs0lutHydra" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/pfmrlib" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="mailto:pfmrlib@hotmail.com" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2024 Hiryuu Concordea<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
