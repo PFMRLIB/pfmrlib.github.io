@@ -13,16 +13,13 @@
     
 
     
-        <meta name="description" content="Project Eunectes - 现代化精密电压源注：由于项目仍在开发中，故下文参数可能与最终参数不同。
+        <meta name="description" content="Project Eunectes - 现代化精密电压源注：由于项目仍在开发中，故下文参数可能与最终参数不同。Lyskamm x CEEE AACC Project
 特性
-产生0V~5V的电压
-控制精度20uV
+产生最高±10.58V的任意电压
+控制精度低至5uV
 电压随机误差小于5ppm
 温漂小于5ppm&amp;#x2F;°C
-±20mA输出电流
-内部设有锂电池不间断供电，可维持至少72h
-
-简介Project"/>
+±20mA输出电"/>
     
 
     <!--Author-->
@@ -37,16 +34,13 @@
 
     <!--Open Graph Description-->
     
-        <meta property="og:description" content="Project Eunectes - 现代化精密电压源注：由于项目仍在开发中，故下文参数可能与最终参数不同。
+        <meta property="og:description" content="Project Eunectes - 现代化精密电压源注：由于项目仍在开发中，故下文参数可能与最终参数不同。Lyskamm x CEEE AACC Project
 特性
-产生0V~5V的电压
-控制精度20uV
+产生最高±10.58V的任意电压
+控制精度低至5uV
 电压随机误差小于5ppm
 温漂小于5ppm&amp;#x2F;°C
-±20mA输出电流
-内部设有锂电池不间断供电，可维持至少72h
-
-简介Project"/>
+±20mA输出电"/>
     
 
     <!--Open Graph Site Name-->
@@ -203,7 +197,7 @@
                         <!-- Date and Author -->
                         
                         
-                            2023-12-18
+                            2024-03-09
                         
                     </span>
                 </div>
@@ -219,74 +213,136 @@
 
             <!-- Tags and categories -->
            
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/undefined">#undefined</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
 
             <!-- Gallery -->
             
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h1 id="Project-Eunectes-现代化精密电压源"><a href="#Project-Eunectes-现代化精密电压源" class="headerlink" title="Project Eunectes - 现代化精密电压源"></a>Project Eunectes - 现代化精密电压源</h1><p><em>注：由于项目仍在开发中，故下文参数可能与最终参数不同。</em></p>
+                <h1 id="Project-Eunectes-现代化精密电压源"><a href="#Project-Eunectes-现代化精密电压源" class="headerlink" title="Project Eunectes - 现代化精密电压源"></a>Project Eunectes - 现代化精密电压源</h1><p><em>注：由于项目仍在开发中，故下文参数可能与最终参数不同。</em><br>Lyskamm x CEEE AACC Project</p>
 <h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul>
-<li>产生0V~5V的电压</li>
-<li>控制精度20uV</li>
+<li>产生最高±10.58V的任意电压</li>
+<li>控制精度低至5uV</li>
 <li>电压随机误差小于5ppm</li>
 <li>温漂小于5ppm&#x2F;°C</li>
 <li>±20mA输出电流</li>
 <li>内部设有锂电池不间断供电，可维持至少72h</li>
 </ul>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Project Eunectes是一套精密电压发生系统。此系统的目标是采用尽可能现代化的元器件制作一套具有较高精度的任意电压源。<br>系统采用ADR4550C带隙基准源作为电压基准，由18bit DAC AD5781根据基准电压源产生0~5V的电压输出。系统采用ADA4523-1精密运放作为基准电压缓冲器与输出电压缓冲器，可提供最大±20mA的输出电流。<br>DAC输出由STM32F042K6 MCU控制。用户可通过板载的编码器旋钮调节输出电压，并通过其他按键实现对系统的控制；用户可通过板载的1602 LCD查看系统的工作信息。此外，系统还可通过USB接口由上位机软件控制。<br>系统可由USB Type-C接口从外部供电。当外部电源掉电时，系统将电源切换到内部的锂电池，从而维持电压基准的正常工作。接入外部电源时将自动向锂电池充电。<br>系统通过ADP5070 DC&#x2F;DC产生±10V的供电轨，并采用ADP7118正LDO与ADP7182负LDO得到低噪声的±9V模拟电源轨。+3.3V逻辑部分电源由TPS82130 DC&#x2F;DC模块提供。</p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Project Eunectes是一套精密电压发生系统。此系统的目标是采用尽可能现代化的元器件制作一套具有较高精度的精密电压源。<br>系统采用ADR1399亚表齐纳基准源作为电压基准，由18bit DAC AD5781根据基准电压源产生最高±10.58V的电压输出。系统采用ADA4523-1精密运放作为基准电压缓冲器与输出电压缓冲器，可提供最大±20mA的输出电流。<br>DAC输出由ESP32-C3 MCU控制。此外，系统还可通过USB接口或蓝牙&#x2F;Wi-Fi串口由上位机软件控制。<br>系统可由USB Type-C接口从外部供电。当外部电源掉电时，系统将电源切换到内部的锂电池，从而维持电压基准的正常工作。接入外部电源时将自动向锂电池充电。<br>系统通过LTM4661 uModule从3.6V~5V的输入电压升压至+15V，通过正LDO ADP7118产生+13.5V的模拟正压；采用LTM8063 uModule将+15V的正压反相至-14V，再通过负LDO ADP7182产生-13.5V的模拟负压。+3.3V逻辑部分电源由TPS82130 DC&#x2F;DC模块提供。</p>
 <h2 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h2><h3 id="总体架构"><a href="#总体架构" class="headerlink" title="总体架构"></a>总体架构</h3><p><img src="/projects/eunectes/assets/architecture.jpg" alt=" "></p>
 <h3 id="电源架构"><a href="#电源架构" class="headerlink" title="电源架构"></a>电源架构</h3><p><img src="/projects/eunectes/assets/power_scheme.jpg" alt=" "></p>
 <h2 id="性能参数-预估"><a href="#性能参数-预估" class="headerlink" title="性能参数(预估)"></a>性能参数(预估)</h2><table>
 <thead>
 <tr>
 <th>参数</th>
-<th>条件</th>
-<th>最小</th>
-<th>典型</th>
-<th>最大</th>
-<th>单位</th>
+<th>&nbsp;条件</th>
+<th>&nbsp;最小</th>
+<th>&nbsp;典型</th>
+<th>&nbsp;最大</th>
+<th>&nbsp;单位</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>输出电压范围</td>
-<td>-</td>
-<td>0</td>
-<td>-</td>
-<td>5.0</td>
-<td>V</td>
+<td>&nbsp;x1</td>
+<td>&nbsp;-7.05</td>
+<td>&nbsp;-</td>
+<td>&nbsp;7.05</td>
+<td>&nbsp;V</td>
+</tr>
+<tr>
+<td></td>
+<td>&nbsp;x3&#x2F;2</td>
+<td>&nbsp;-10.58</td>
+<td>&nbsp;-</td>
+<td>&nbsp;10.58</td>
+<td>&nbsp;V</td>
+</tr>
+<tr>
+<td></td>
+<td>&nbsp;x1&#x2F;11</td>
+<td>&nbsp;-0.64</td>
+<td>&nbsp;-</td>
+<td>&nbsp;0.64</td>
+<td>&nbsp;V</td>
+</tr>
+<tr>
+<td></td>
+<td>&nbsp;x3&#x2F;22</td>
+<td>&nbsp;-0.96</td>
+<td>&nbsp;-</td>
+<td>&nbsp;0.96</td>
+<td>&nbsp;V</td>
 </tr>
 <tr>
 <td>控制精度</td>
-<td>-</td>
-<td>-</td>
-<td>20</td>
-<td>-</td>
-<td>uV</td>
+<td>&nbsp;x1</td>
+<td>&nbsp;-</td>
+<td>&nbsp;53.78</td>
+<td>&nbsp;-</td>
+<td>&nbsp;uV</td>
+</tr>
+<tr>
+<td></td>
+<td>&nbsp;x3&#x2F;2</td>
+<td>&nbsp;-</td>
+<td>&nbsp;80.72</td>
+<td>&nbsp;-</td>
+<td>&nbsp;uV</td>
+</tr>
+<tr>
+<td></td>
+<td>&nbsp;x1&#x2F;11</td>
+<td>&nbsp;-</td>
+<td>&nbsp;4.88</td>
+<td>&nbsp;-</td>
+<td>&nbsp;uV</td>
+</tr>
+<tr>
+<td></td>
+<td>&nbsp;x3&#x2F;22</td>
+<td>&nbsp;-</td>
+<td>&nbsp;7.32</td>
+<td>&nbsp;-</td>
+<td>&nbsp;uV</td>
 </tr>
 <tr>
 <td>输出电流</td>
-<td>-</td>
-<td>-20</td>
-<td>-</td>
-<td>20</td>
-<td>mA</td>
+<td>&nbsp;-</td>
+<td>&nbsp;-20</td>
+<td>&nbsp;-</td>
+<td>&nbsp;20</td>
+<td>&nbsp;mA</td>
 </tr>
 <tr>
 <td>电压随机误差</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>5</td>
-<td>ppm</td>
+<td>&nbsp;-</td>
+<td>&nbsp;-</td>
+<td>&nbsp;-</td>
+<td>&nbsp;5</td>
+<td>&nbsp;ppm</td>
 </tr>
 <tr>
 <td>温漂</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>5.0</td>
-<td>ppm</td>
+<td>&nbsp;-</td>
+<td>&nbsp;-</td>
+<td>&nbsp;-</td>
+<td>&nbsp;5.0</td>
+<td>&nbsp;ppm</td>
 </tr>
 </tbody></table>
 
